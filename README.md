@@ -17,8 +17,8 @@ Before you start, ensure you have the following installed:
 ## Installation
 Clone the repository (if applicable):
  
-git clone https://your-repository-url
-cd your-project-directory
+git clone https://github.com/maulanayudha021/crud-laravel-s3-redis
+cd crud-laravel-s3-redis
 
 ## Install dependencies:
 composer install
