@@ -27,6 +27,7 @@ Configure your .env file for database and Redis.
 Set up the Amazon S3 credentials for file uploads.
 env
 
+```
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
@@ -43,13 +44,16 @@ AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_DEFAULT_REGION=your_region
 AWS_BUCKET=your_s3_bucket_name
 FILESYSTEM_DRIVER=s3
+```
 
 ## Run migrations:
-php artisan migrate
+```php artisan migrate```
 
 ## Clear any existing Redis data (optional):
+```
 php artisan cache:clear
 php artisan redis:flushdb
+```
 
 ## Conclusion
 This application provides a simple and efficient way to manage client data with Redis caching for better performance and S3 file uploads for storing client logos. The code includes full CRUD operations, along with soft deletion and cache invalidation, to ensure data integrity and consistency.
