@@ -27,11 +27,11 @@ Configure your .env file for database and Redis.
 Set up the Amazon S3 credentials for file uploads.
 env
 
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5432
 DB_DATABASE=your_database_name
-DB_USERNAME=your_database_user
+DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
  
 REDIS_HOST=127.0.0.1
@@ -42,6 +42,7 @@ AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_DEFAULT_REGION=your_region
 AWS_BUCKET=your_s3_bucket_name
+FILESYSTEM_DRIVER=s3
 
 ## Run migrations:
 php artisan migrate
